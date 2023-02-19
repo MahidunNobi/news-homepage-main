@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container m-auto flex justify-between py-6 items-center">
+
+
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="">
+    </div>
+<!-- ------------------------ Menu-------------------- -->
+    <div class="menuBar mr-3 cursor-pointer md:hidden">
+      <img src="assets/images/icon-menu.svg" alt="">
+    </div>
+    <div class="links w-2/3 bg-gray-300 absolute h-screen -right-full top-0 p-6 md:w-auto md:bg-inherit md:relative md:h-auto md:-right-0 transition-all hidden md:block">
+      
+      <div class="flex justify-end mb-6 md:hidden cursor-pointer">
+        <img src="assets/images/icon-menu-close.svg" alt="" id="closeBtn">
+      </div>
+      <ul class="flex flex-col space-y-6 md:flex-row md:space-x-8 md:text-darkGrayishBlue text-2xl md:text-lg md:space-y-0">
+        
+        <a href="index.html"><li class="hover:text-softOrange cursor-pointer">Home</li></a>
+       <a href="new.html"> <li class="hover:text-softOrange cursor-pointer">New</li> </a>
+        <a href="popural.html"><li class="hover:text-softOrange cursor-pointer">Popular</li></a>
+        <a href="trending.html"><li class="hover:text-softOrange cursor-pointer"> Trending</li> </a>
+        <div class="catagoriesSection relative"><li class="hover:text-softOrange cursor-pointer" id="cBtn"> Categories</li>
+          <!-- Catagories Section  -->
+          <ul class="catagoriex md:w-96 md:bg-gray-400 md:absolute md:top-11 md:-left-64 p-6 md:text-Off-white text-veryDarkBlue md:flex md:flex-wrap md:space-x-6 md:rounded-xl scale-y-0 origin-top transition-all">
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Politics</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Entertainment</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Sports</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Bussiness</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Technology</a></li>
+            
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- News Cards Sections -->
+<section class="container mx-auto">
+    <div class="allCards md:flex md:flex-wrap md:space-x-7 justify-center">
+        <!-- Card 01 -->
+        <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all"> 
+          <a href="Newsdescription.html">
+            <div class="imgSection mb-6">
+              <img src="assets/images/Hydrogen VS Oli Car.jpg" alt="">
+            </div>
+            <div class="textSection px-6">
+              <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> Hydrogen VS Electric Cars  </h2>
+              <p class="leading-6 text-darkGrayishBlue pb-6"> Will hydrogen-fueled cars ever catch up to EVs Sees Perjury by Witnesses? </p> 
+            </div></a>
+        </div>
+        <!-- Card 02 -->
+        <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all">
+          <a href="Newsdescription.html">
+          <div class="imgSection mb-6">
+            <img src="assets/images/Artificial_Intellige.jpg" alt="">
+          </div>
+          <div class="textSection px-6">
+            <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> The Downsides of AI Artistry  </h2>
+            <p class="leading-6 text-darkGrayishBlue pb-6"> What are the possible adverse effects of on-demand AI image generation? </p> 
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all">
+        <a href="Newsdescription.html">
+        <div class="imgSection mb-6">
+          <img src="assets/images/VC.jpg" alt="">
+        </div>
+        <div class="textSection px-6">
+          <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> Is VC Funding Drying Up?  </h2>
+          <p class="leading-6 text-darkGrayishBlue pb-6"> Private funding by VC firms is down 50% YOY. We take a look at what that means. </p> 
+        </div>
+      </a>
+    </div>
+<!-- Card 04 -->
+        <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all">
+          <a href="Newsdescription.html">
+            <div class="imgSection mb-6">
+              <img src="assets/images/Trump.jpg" alt="">
+            </div>
+            <div class="textSection px-6">
+              <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> Trump is a politisian  </h2>
+              <p class="leading-6 text-darkGrayishBlue pb-6"> Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses. </p> 
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 05 -->
+        <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all">
+          <a href="Newsdescription.html">
+          <div class="imgSection mb-6">
+            <img src="assets/images/biden.jpg" alt="">
+          </div>
+          <div class="textSection px-6">
+            <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> Biden got the power  </h2>
+            <p class="leading-6 text-darkGrayishBlue pb-6"> The investigation in Atlanta has been seen as one of the most significan </p> 
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 06 -->
+      <div class="singleCards md:w-1/4 overflow-hidden rounded-xl shadow-xl cursor-pointer hover:shadow-2xl md:mb-10 transition-all">
+        <a href="Newsdescription.html">
+        <div class="imgSection mb-6">
+          <img src="assets/images/audi.jpg" alt="">
+        </div>
+        <div class="textSection px-6">
+          <h2 class="text-3xl font-semibold hover:text-softOrange cursor-pointer mb-3"> How much comfortable Q8 is?  </h2>
+          <p class="leading-6 text-darkGrayishBlue pb-6"> The special grand jury, which met for nearly seven months in a courthouse in downtown  </p> 
+        </div>
+      </a>
+    </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.facebook.com/profile.php?id=100088336766325">Md. Mahidun Nobi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

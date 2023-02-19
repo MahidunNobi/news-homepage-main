@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="container m-auto flex justify-between py-6 items-center">
+
+
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="">
+    </div>
+<!-- ------------------------ Menu-------------------- -->
+    <div class="menuBar mr-3 cursor-pointer md:hidden">
+      <img src="assets/images/icon-menu.svg" alt="">
+    </div>
+    <div class="links w-2/3 bg-gray-300 absolute h-screen -right-full top-0 p-6 md:w-auto md:bg-inherit md:relative md:h-auto md:-right-0 transition-all hidden md:block">
+      
+      <div class="flex justify-end mb-6 md:hidden cursor-pointer">
+        <img src="assets/images/icon-menu-close.svg" alt="" id="closeBtn">
+      </div>
+      <ul class="flex flex-col space-y-6 md:flex-row md:space-x-8 md:text-darkGrayishBlue text-2xl md:text-lg md:space-y-0">
+        <a href="index.html"><li class="hover:text-softOrange cursor-pointer">Home</li></a>
+       <a href="new.html"> <li class="hover:text-softOrange cursor-pointer">New</li> </a>
+        <a href="popural.html"><li class="hover:text-softOrange cursor-pointer">Popular</li></a>
+        <a href="trending.html"><li class="hover:text-softOrange cursor-pointer"> Trending</li> </a>
+        <div class="catagoriesSection relative"><li class="hover:text-softOrange cursor-pointer" id="cBtn"> Categories</li>
+          <!-- Catagories Section  -->
+        <ul class="catagoriex md:w-96 md:bg-gray-400 md:absolute md:top-11 md:-left-64 p-6 md:text-Off-white text-veryDarkBlue md:flex md:flex-wrap md:space-x-6 md:rounded-xl scale-y-0 origin-top transition-all">
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Politics</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Entertainment</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Sports</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Bussiness</a></li>
+            <li class="mb-10 border-b-2 border-darkGrayishBlue md:border-none"><a href="Newsdescription.html" class="px-6 py-4 md:bg-softRed md:rounded-full md:hover:bg-softOrange md:hover:text-black hover:text-softOrange transition-all ">Technology</a></li>
+            
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mx-auto">
+  <div class="flexBox flex justify-center">
+    <div class="newsDescriptions lg:w-4/5 w-full">
+      <!-- Single News Blocks  01 -->
+      <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-6">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/Hydrogen VS Oli Car.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  Hydrogen VS Electric Cars  </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> Will hydrogen-fueled cars ever catch up to EVs Sees Perjury by Witnesses? Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results.A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday. The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.</p>
+        </div>
+      </div>
+
+       <!-- Single News Blocks  02 -->
+       <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-4">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/Artificial_Intellige.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  The Downsides of AI Artistry   </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> What are the possible adverse effects of on-demand AI image generation?to EVs Sees Perjury by Witnesses? Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results. <br> <br>A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday. The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.<br> <br> The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.”</p>
+        </div>
+      </div>
+
+      <!-- Single News Blocks  03 -->
+      <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-4">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/VC.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  Is VC Funding Drying Up?  </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> What are the possible adverse effects of on-demand AI image generation?to EVs Sees Perjury by Witnesses? Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results.A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday. The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.<br> <br> The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.”</p>
+        </div>
+      </div>
+<!-- Single News Blocks  04 -->
+      <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-4">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/Trump.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  Trump is a politisian  </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses. Private funding by VC firms is down 50% YOY. We take a look at what that means What are the possible adverse effects of on-demand AI image generation?to EVs Sees Perjury by Witnesses? Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results.A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday.<br> <br> The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.<br> <br> The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.”</p>
+        </div>
+      </div>
+      <!-- Single News Blocks  05 -->
+      <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-4">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/biden.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  Biden got the power  </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> The investigation in Atlanta has been seen as one of the most significan. Private funding by VC firms is down 50% YOY. We take a look at what that means What are the possible adverse effects of on-demand AI image generation?to EVs Sees Perjury by Witnesses? <br> <br>Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results.A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday.<br> <br> The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.<br> <br> The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.”</p>
+        </div>
+      </div>
+      <!-- Single News Blocks  06 -->
+      <div class="singleNewsBlocks border-b-2 border-darkGrayishBlue mb-10 pb-4">
+        <div class="newsImg w-full mb-10">
+          <img src="assets/images/audi.jpg" class="w-full" alt="">
+          
+        </div>
+        <div class="DescText">
+          <h1 class="text-6xl font-semibold mb-6 px-4">  How much comfortable Q8 is?  </h1>
+          <p class="text-lg leading-7 font-Playfair font-semibold px-4"> Very much comfortable. The investigation in Atlanta has been seen as one of the most significan. Private funding by VC firms is down 50% YOY. We take a look at what that means What are the possible adverse effects of on-demand AI image generation?to EVs Sees Perjury by Witnesses? Grand Jury in Georgia Trump Inquiry Sees Perjury by Witnesses, but No Vote FraudExcerpts from the jury’s report, however, provided no indication of who, if anyone, jurors believed should be charged for interfering in Georgia’s 2020 election results.A special grand jury that investigated election interference by former President Donald J. Trump and his allies in Georgia said it saw possible evidence of perjury by “one or more” witnesses who testified before it, according to portions of the jury’s final report that were released on Thursday.<br> <br> The jurors also unanimously rebutted claims of widespread fraud made by Mr. Trump after the 2020 election.The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent. The investigation in Atlanta has been seen as one of the most significant legal threats to Mr. Trump, given his personal role in pressuring Georgia election officials to “find” him enough votes to overturn his loss in the state. The Fulton County district attorney, Fani T. Willis, said recently that a decision on bringing charges was “imminent.”<br> <br>The several pages of excerpts released by a judge, however, offered only a narrow window into the full scope of the jury’s conclusions, providing no indication of who it believed should be charged, or which violations of Georgia law, beyond perjury, may have taken place.
+
+            The special grand jury, which met for nearly seven months in a courthouse in downtown Atlanta, was charged with investigating the actions of Mr. Trump and some of his allies in Georgia after the November 2020 elections, and recommending whether indictments should be pursued by prosecutors
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</main>
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.facebook.com/profile.php?id=100088336766325">Md. Mahidun Nobi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
